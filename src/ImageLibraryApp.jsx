@@ -8,7 +8,7 @@ export const ImageLibraryApp = () => {
 	console.log(categories);
 
 	const onAddCategory = (newCategory) => {
-		if (categories.find((element) => element === newCategory)) return;
+		if (categories.includes(newCategory)) return;
 		setCategories([newCategory, ...categories]);
 	};
 
